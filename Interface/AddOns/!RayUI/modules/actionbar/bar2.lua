@@ -16,8 +16,6 @@ for i=1, 12 do
 	button:SetSize(C["actionbar"].buttonsize, C["actionbar"].buttonsize)
 	button:ClearAllPoints()
 	if i == 1 then
-		button:SetPoint("TOPLEFT", bar, 0,0)
-	elseif i==7 then
 		button:SetPoint("BOTTOMLEFT", bar, 0,0)
 	else
 		local previous = _G["MultiBarBottomLeftButton"..i-1]      
