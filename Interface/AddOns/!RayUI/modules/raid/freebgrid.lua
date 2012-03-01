@@ -602,7 +602,7 @@ oUF:Factory(function(self)
 	for i=1, 3 do
 		local group = freebHeader("Raid_Freebgrid10_"..i, i, nil, nil, nil, 15)
 		if i == 1 then
-			group:Point("TOPLEFT", UIParent, "BOTTOMRIGHT", - C["raid"].width*1.3*3 -  C["raid"].spacing*2 - 50, 461)
+			group:Point("BOTTOM", "ActionBar3Mover", "TOPLEFT", C["raid"].width*1.3, C["actionbar"].buttonspacing*3)
 		else
 			group:Point(pos, raid10[i-1], posRel, colX or 0, colY or 0)
 		end
@@ -614,7 +614,7 @@ oUF:Factory(function(self)
 	for i=1, C["raid"].numCol do
 		local group = freebHeader("Raid_Freebgrid25_"..i, i)
 		if i == 1 then
-			group:Point("TOPLEFT", UIParent, "BOTTOMRIGHT", - C["raid"].width*5 -  C["raid"].spacing*4 - 50, 422)
+			group:Point("BOTTOM", "ActionBar3Mover", "TOPLEFT", C["raid"].width*1.3, C["actionbar"].buttonspacing*3)
 		else
 			group:Point(pos, raid25[i-1], posRel, colX or 0, colY or 0)
 		end
